@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Azure](https://img.shields.io/badge/Azure-AI%20Foundry-0078D4?logo=microsoftazure)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-En%20cours-orange)
 # 🤖 Agent Historique Informatique — Azure AI Foundry
 
 > Agent IA conversationnel créé avec Microsoft Azure AI Foundry  
