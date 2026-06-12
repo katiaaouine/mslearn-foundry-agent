@@ -1,5 +1,7 @@
 .venv/
+.venv1/
 __pycache__/
 *.pyc
 .env
 .azure/
+=2.0.0

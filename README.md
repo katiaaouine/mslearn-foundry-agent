@@ -1,39 +1,61 @@
-# 🤖 Agent Historique Informatique — Microsoft Foundry
+# 🤖 Agent Historique Informatique — Azure AI Foundry
 
-Agent IA conversationnel créé avec Microsoft Azure AI Foundry dans le cadre de la formation Microsoft Learn "Develop Your First Agent with Microsoft Foundry".
+> Agent IA conversationnel créé avec Microsoft Azure AI Foundry  
+> Formation : *Sneak Peek — Develop Your First Agent with Microsoft Foundry*
 
-## 📋 Description
-Cet agent répond à des questions sur l'histoire de l'informatique et des ordinateurs vintages. Il tourne en boucle interactive jusqu'à ce que l'utilisateur tape "quit".
+---
+
+## 📌 Description
+
+Cet agent répond à des questions sur l'histoire de l'informatique et des ordinateurs vintage. Il tourne en session interactive jusqu'à ce que l'utilisateur tape `quit`.
 
 ## 🛠 Stack technique
-- Azure AI Foundry
+
+- Azure AI Foundry (ai.azure.com)
 - Python 3.11
 - azure-ai-projects 2.2.0
+- azure-identity
 - Azure CLI
-- GitHub
+- VS Code
 
-## 🚀 Installation
+## 🚀 Lancer le projet
 
 ### Prérequis
 - Python 3.11+
-- Azure CLI installé et connecté (`az login`)
-- Un projet Azure AI Foundry actif
+- Azure CLI (`az login` avec un compte Azure actif)
+- Un projet Azure AI Foundry avec un agent déployé
 
-### Lancer l'agent
+### Installation
+
 ```bash
 git clone https://github.com/TON_USERNAME/mslearn-foundry-agent.git
 cd mslearn-foundry-agent
 python3 -m venv .venv
 source .venv/bin/activate
-pip install azure-ai-projects>=2.0.0
-python agent.py
+pip install -r requirements.txt
 ```
 
-## 📸 Démonstration
-L'agent répond en boucle à tes questions sur l'histoire de l'informatique.
+### Configuration
+Dans `src/agent.py`, remplace `my_endpoint` par ton endpoint Foundry :
+```python
+my_endpoint = "https://TON-ENDPOINT.services.ai.azure.com/api/projects/TON-PROJET"
+```
 
-## 🏅 Formation
-[Sneak Peek: Develop Your First Agent with Microsoft Foundry](https://learn.microsoft.com/fr-fr/)
+### Lancement
+```bash
+python src/agent.py
+```
 
-## 👩‍💻 Auteur
-katiaaouine2000
+
+
+'''
+
+
+'''
+## 📚 Formation suivie
+
+[Sneak Peek: Develop Your First Agent with Microsoft Foundry](https://learn.microsoft.com)
+
+## 👩‍💻 Auteure
+
+**katiaaouine2000** — [GitHub](https://github.com/katiaaouine2000)
