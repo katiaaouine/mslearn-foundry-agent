@@ -3,8 +3,8 @@
     
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
-    
-my_endpoint = "https://katiaaouine-5012-resource.services.ai.azure.com/api/projects/katiaaouine-5012"
+import os
+my_endpoint = os.environ.get("AZURE_FOUNDRY_ENDPOINT", "YOUR_ENDPOINT_HERE")"
     
 project_client = AIProjectClient(
      endpoint=my_endpoint,
