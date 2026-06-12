@@ -30,7 +30,20 @@ while True:
     
     # Reference the agent to get a response
     response = openai_client.responses.create(
-         input=[{"role": "user", "content": user_prompt}],
+         input=[
+            {
+                "role": "system",
+                "content": """Tu es un agent spécialisé dans l'histoire de l'informatique.
+        Tu as accès à une recherche web pour trouver des informations récentes.
+        Tu réponds de manière précise, pédagogique et passionnée sur :
+        - L'histoire des ordinateurs et des technologies
+        - Les pionniers de l'informatique
+        - Les machines vintage et leur impact
+        - L'évolution des langages de programmation
+        Réponds toujours en français."""
+            },
+            {"role": "user", "content": user_prompt}
+        ],
          extra_body={"agent_reference": {"name": my_agent, "version": my_version, "type": "agent_reference"}},
     )
     
