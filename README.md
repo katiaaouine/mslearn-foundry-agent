@@ -1,7 +1,7 @@
 # 🤖 Agent Historique Informatique — Azure AI Foundry
 
 > Agent IA conversationnel créé avec Microsoft Azure AI Foundry  
-> Formation : *Sneak Peek — Develop Your First Agent with Microsoft Foundry*
+> Formation : *Develop your first agent with Microsoft *
 
 ---
 
@@ -44,18 +44,13 @@ my_endpoint = "https://TON-ENDPOINT.services.ai.azure.com/api/projects/TON-PROJE
 ### Lancement
 ```bash
 python src/agent.py
-```
-
-
+``
 
 '''
-
-
-'''
-## 📚 Formation suivie
+## Formation suivie
 
 [Sneak Peek: Develop Your First Agent with Microsoft Foundry](https://learn.microsoft.com)
 
-## 👩‍💻 Auteure
+##  Auteure
 
-**katiaaouine2000** — [GitHub](https://github.com/katiaaouine2000)
+**katiaaouine2000** 
